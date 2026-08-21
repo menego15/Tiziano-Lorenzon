@@ -17,122 +17,103 @@
 <meta name="twitter:title" content="Faq — Tiziano Lorenzon"/>
 <meta name="twitter:description" content="Le domande più frequenti sul Personal Coaching di basket di Tiziano Lorenzon: costi, numero di partecipanti, sedi e tempi dei risultati."/>
 <meta name="twitter:image" content="https://tizianolorenzon.com/uploads/Tiz.png"/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23c9691f' stroke-width='1.8'%3E%3Ccircle cx='12' cy='12' r='9.3'/%3E%3Cpath d='M12 2.7v18.6'/%3E%3Cpath d='M2.7 12h18.6'/%3E%3Cpath d='M4.7 5.9c2.7 2.9 2.7 9.3 0 12.2'/%3E%3Cpath d='M19.3 5.9c-2.7 2.9-2.7 9.3 0 12.2'/%3E%3C/svg%3E"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+<link href="assets/site.css" rel="stylesheet"/>
 <style>
-html,body{margin:0;padding:0}
-body{background:#ffffff;color:#1c1c1c;font-family:Lato,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
-*{box-sizing:border-box}
-a{color:#3373dc;text-decoration:none}
-a:hover{color:#1f4fa3}
-summary{cursor:pointer}
-summary::-webkit-details-marker{display:none}
-img{max-width:100%}
-.tl-menu-toggle{position:absolute;opacity:0;width:1px;height:1px;overflow:hidden}
-.tl-hamburger{display:none;flex-direction:column;justify-content:center;gap:6px;width:30px;height:24px;cursor:pointer}
-.tl-hamburger span{display:block;width:100%;height:2px;background:#ffffff;border-radius:1px;transition:transform .2s,opacity .2s}
-.tl-faq-q::after{content:"+";font-size:22px;line-height:1;color:#3373dc;flex:none;margin-left:16px}
+.tl-faq-q::after{content:"+";font-size:22px;line-height:1;color:var(--tl-blue);flex:none;margin-left:16px}
 .tl-faq-item[open] .tl-faq-q::after{content:"\2212"}
-@media (max-width:900px){
-  .tl-hamburger{display:flex}
-  .tl-nav{display:none !important;width:100%;flex-basis:100%;flex-direction:column !important;align-items:flex-start !important;gap:14px !important;border-top:1px solid #1a1a1a;margin-top:14px;padding-top:14px}
-  .tl-menu-toggle:checked ~ .tl-nav{display:flex !important}
-  .tl-menu-toggle:checked ~ .tl-hamburger span:nth-child(1){transform:translateY(8px) rotate(45deg)}
-  .tl-menu-toggle:checked ~ .tl-hamburger span:nth-child(2){opacity:0}
-  .tl-menu-toggle:checked ~ .tl-hamburger span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
-  .tl-pad{padding-top:56px !important;padding-bottom:56px !important}
-}
-@media (max-width:560px){
-  .tl-nav{gap:10px !important;font-size:12.5px !important}
-  h1{font-size:30px !important}
-}
-.hv0:hover{color:#ffffff;border-bottom:2px solid #ffffff}
-.hv1:hover{color:#ffffff}
-.hv3:hover{background:#1f4fa3;color:#ffffff}
 </style>
 </head>
 <body>
 <div style="width:100%;background:#ffffff">
 
-  <header style="position:sticky;top:0;z-index:50;background:#000000;color:#ffffff;border-bottom:3px solid #3373dc">
+  <header style="position:sticky;top:0;z-index:50;background:#000000;color:#ffffff;border-bottom:3px solid var(--tl-blue)">
     <div style="max-width:1200px;margin:0 auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
-      <a href="index.html" style="color:#fff;display:flex;flex-direction:column;gap:4px">
-        <span style="font-family:Oswald,sans-serif;font-size:25px;font-weight:700;line-height:1;letter-spacing:1.5px;text-transform:uppercase">Tiziano Lorenzon</span>
-        <span style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#9a9a9a">Basket Personal Coaching</span>
+      <a href="index.html" style="color:#fff;display:flex;align-items:center;gap:10px">
+        <svg class="tl-logo-ball" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9.3"/><path d="M12 2.7v18.6"/><path d="M2.7 12h18.6"/><path d="M4.7 5.9c2.7 2.9 2.7 9.3 0 12.2"/><path d="M19.3 5.9c-2.7 2.9-2.7 9.3 0 12.2"/></svg>
+        <span style="display:flex;flex-direction:column;gap:4px">
+          <span style="font-family:Oswald,sans-serif;font-size:25px;font-weight:700;line-height:1;letter-spacing:1.5px;text-transform:uppercase">Tiziano Lorenzon</span>
+          <span style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#9a9a9a">Basket Personal Coaching</span>
+        </span>
       </a>
       <input type="checkbox" id="tl-menu-toggle" class="tl-menu-toggle"/>
       <label for="tl-menu-toggle" class="tl-hamburger" aria-label="Apri menu"><span></span><span></span><span></span></label>
       <nav class="tl-nav" style="display:flex;align-items:center;gap:26px;flex-wrap:wrap;font-family:Oswald,sans-serif;font-size:14px;letter-spacing:1.4px;text-transform:uppercase">
-        <a class="hv0" href="index.html" style="color:#e6e6e6;padding:6px 0;border-bottom:2px solid transparent">Hompage</a>
+        <a class="hv0" href="index.html" style="color:#e6e6e6;padding:6px 0;border-bottom:2px solid transparent">Homepage</a>
         <a class="hv0" href="mission.html" style="color:#e6e6e6;padding:6px 0;border-bottom:2px solid transparent">Mission</a>
         <a class="hv0" href="chi-sono.html" style="color:#e6e6e6;padding:6px 0;border-bottom:2px solid transparent">Chi sono</a>
         <a class="hv0" href="blog.html" style="color:#e6e6e6;padding:6px 0;border-bottom:2px solid transparent">Blog</a>
-        <a href="faq.html" style="color:#3373dc;padding:6px 0;border-bottom:2px solid #3373dc">Faq</a>
+        <a href="faq.html" style="color:var(--tl-blue);padding:6px 0;border-bottom:2px solid var(--tl-blue)">Faq</a>
       </nav>
     </div>
   </header>
 
-  <section class="tl-pad" style="max-width:900px;margin:0 auto;padding:90px 24px 100px">
-    <h1 style="margin:0 0 40px;font-family:Oswald,sans-serif;font-weight:700;font-size:44px;line-height:1.15;letter-spacing:0.5px;color:#111111">Faq</h1>
+  <section class="tl-pad" style="max-width:800px;margin:0 auto;padding:90px 24px 100px">
+    <span class="tl-eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9.3"/><path d="M12 2.7v18.6"/><path d="M2.7 12h18.6"/><path d="M4.7 5.9c2.7 2.9 2.7 9.3 0 12.2"/><path d="M19.3 5.9c-2.7 2.9-2.7 9.3 0 12.2"/></svg>Domande frequenti</span>
+    <h1 style="margin:0 0 12px;font-family:Oswald,sans-serif;font-weight:700;font-size:44px;line-height:1.15;letter-spacing:0.5px;color:var(--tl-ink-3)">Faq</h1>
+    <div class="tl-mark" style="margin-bottom:40px"><span class="tl-mark-line"></span><svg class="tl-mark-ball" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9.3"/><path d="M12 2.7v18.6"/><path d="M2.7 12h18.6"/><path d="M4.7 5.9c2.7 2.9 2.7 9.3 0 12.2"/><path d="M19.3 5.9c-2.7 2.9-2.7 9.3 0 12.2"/></svg></div>
 
     <div style="display:flex;flex-direction:column">
 
       <details class="tl-faq-item" style="border-top:1px solid #dcdcdc;padding:4px 0">
-        <summary class="tl-faq-q" style="display:flex;align-items:center;justify-content:space-between;font-family:Oswald,sans-serif;font-weight:500;font-size:19px;color:#111111;padding:20px 0">Quali sono i costi?</summary>
-        <p style="margin:0 0 24px;font-size:17px;line-height:1.75;color:#2a2a2a">I costi vengono stabiliti in base alla durata dell'impegno richiesto, chiamaci e sapremo sicuramente trovare una soluzione su misura per te.</p>
+        <summary class="tl-faq-q" style="display:flex;align-items:center;justify-content:space-between;font-family:Oswald,sans-serif;font-weight:500;font-size:19px;color:var(--tl-ink-3);padding:20px 0">Quali sono i costi?</summary>
+        <p style="margin:0 0 24px;font-size:17px;line-height:1.75;color:var(--tl-ink-2)">I costi vengono stabiliti in base alla durata dell'impegno richiesto, chiamaci e sapremo sicuramente trovare una soluzione su misura per te.</p>
       </details>
 
       <details class="tl-faq-item" style="border-top:1px solid #dcdcdc;padding:4px 0">
-        <summary class="tl-faq-q" style="display:flex;align-items:center;justify-content:space-between;font-family:Oswald,sans-serif;font-weight:500;font-size:19px;color:#111111;padding:20px 0">Quante persone possono partecipare?</summary>
-        <p style="margin:0 0 24px;font-size:17px;line-height:1.75;color:#2a2a2a">Il numero delle persone può variare da un minimo di 1, per sedute individuali, ad un massimo di 6.</p>
+        <summary class="tl-faq-q" style="display:flex;align-items:center;justify-content:space-between;font-family:Oswald,sans-serif;font-weight:500;font-size:19px;color:var(--tl-ink-3);padding:20px 0">Quante persone possono partecipare?</summary>
+        <p style="margin:0 0 24px;font-size:17px;line-height:1.75;color:var(--tl-ink-2)">Il numero delle persone può variare da un minimo di 1, per sedute individuali, ad un massimo di 6.</p>
       </details>
 
       <details class="tl-faq-item" style="border-top:1px solid #dcdcdc;padding:4px 0">
-        <summary class="tl-faq-q" style="display:flex;align-items:center;justify-content:space-between;font-family:Oswald,sans-serif;font-weight:500;font-size:19px;color:#111111;padding:20px 0">Di cosa si tratta?</summary>
-        <p style="margin:0 0 24px;font-size:17px;line-height:1.75;color:#2a2a2a">Personal Coaching è un servizio continuativo di allenamenti personalizzati mirati allo sviluppo delle capacità personali, aperto a ragazzi e ragazze.</p>
+        <summary class="tl-faq-q" style="display:flex;align-items:center;justify-content:space-between;font-family:Oswald,sans-serif;font-weight:500;font-size:19px;color:var(--tl-ink-3);padding:20px 0">Di cosa si tratta?</summary>
+        <p style="margin:0 0 24px;font-size:17px;line-height:1.75;color:var(--tl-ink-2)">Personal Coaching è un servizio continuativo di allenamenti personalizzati mirati allo sviluppo delle capacità personali, aperto a ragazzi e ragazze.</p>
       </details>
 
       <details class="tl-faq-item" style="border-top:1px solid #dcdcdc;padding:4px 0">
-        <summary class="tl-faq-q" style="display:flex;align-items:center;justify-content:space-between;font-family:Oswald,sans-serif;font-weight:500;font-size:19px;color:#111111;padding:20px 0">Ho bisogno di una palestra per allenarmi?</summary>
-        <p style="margin:0 0 24px;font-size:17px;line-height:1.75;color:#2a2a2a">No, abbiamo a disposizione un impianto, ma possiamo decidere insieme dove allenarci.</p>
+        <summary class="tl-faq-q" style="display:flex;align-items:center;justify-content:space-between;font-family:Oswald,sans-serif;font-weight:500;font-size:19px;color:var(--tl-ink-3);padding:20px 0">Ho bisogno di una palestra per allenarmi?</summary>
+        <p style="margin:0 0 24px;font-size:17px;line-height:1.75;color:var(--tl-ink-2)">No, abbiamo a disposizione un impianto, ma possiamo decidere insieme dove allenarci.</p>
       </details>
 
       <details class="tl-faq-item" style="border-top:1px solid #dcdcdc;padding:4px 0">
-        <summary class="tl-faq-q" style="display:flex;align-items:center;justify-content:space-between;font-family:Oswald,sans-serif;font-weight:500;font-size:19px;color:#111111;padding:20px 0">Quanto tempo mi occorre prima di notare dei risultati?</summary>
-        <p style="margin:0 0 24px;font-size:17px;line-height:1.75;color:#2a2a2a">I risultati più grandi si ottengono in tre fasi del programma: durante la prima settimana di allenamento, durante la terza settimana di allenamento e durante l'ottava settimana d'allenamento. Dopo 10 settimane la maggior parte dei giocatori è completamente trasformata.</p>
+        <summary class="tl-faq-q" style="display:flex;align-items:center;justify-content:space-between;font-family:Oswald,sans-serif;font-weight:500;font-size:19px;color:var(--tl-ink-3);padding:20px 0">Quanto tempo mi occorre prima di notare dei risultati?</summary>
+        <p style="margin:0 0 24px;font-size:17px;line-height:1.75;color:var(--tl-ink-2)">I risultati più grandi si ottengono in tre fasi del programma: durante la prima settimana di allenamento, durante la terza settimana di allenamento e durante l'ottava settimana d'allenamento. Dopo 10 settimane la maggior parte dei giocatori è completamente trasformata.</p>
       </details>
 
       <details class="tl-faq-item" style="border-top:1px solid #dcdcdc;padding:4px 0">
-        <summary class="tl-faq-q" style="display:flex;align-items:center;justify-content:space-between;font-family:Oswald,sans-serif;font-weight:500;font-size:19px;color:#111111;padding:20px 0">Personal Coaching funziona anche per le ragazze?</summary>
-        <p style="margin:0 0 24px;font-size:17px;line-height:1.75;color:#2a2a2a">Certo, funziona allo stesso modo sia per i ragazzi che per le ragazze.</p>
+        <summary class="tl-faq-q" style="display:flex;align-items:center;justify-content:space-between;font-family:Oswald,sans-serif;font-weight:500;font-size:19px;color:var(--tl-ink-3);padding:20px 0">Personal Coaching funziona anche per le ragazze?</summary>
+        <p style="margin:0 0 24px;font-size:17px;line-height:1.75;color:var(--tl-ink-2)">Certo, funziona allo stesso modo sia per i ragazzi che per le ragazze.</p>
       </details>
 
       <details class="tl-faq-item" style="border-top:1px solid #dcdcdc;padding:4px 0">
-        <summary class="tl-faq-q" style="display:flex;align-items:center;justify-content:space-between;font-family:Oswald,sans-serif;font-weight:500;font-size:19px;color:#111111;padding:20px 0">Funziona anche per i ragazzi più giovani?</summary>
-        <p style="margin:0 0 24px;font-size:17px;line-height:1.75;color:#2a2a2a">Certo, adatteremo il nostro lavoro utilizzando un programma su misura anche per i ragazzi più giovani.</p>
+        <summary class="tl-faq-q" style="display:flex;align-items:center;justify-content:space-between;font-family:Oswald,sans-serif;font-weight:500;font-size:19px;color:var(--tl-ink-3);padding:20px 0">Funziona anche per i ragazzi più giovani?</summary>
+        <p style="margin:0 0 24px;font-size:17px;line-height:1.75;color:var(--tl-ink-2)">Certo, adatteremo il nostro lavoro utilizzando un programma su misura anche per i ragazzi più giovani.</p>
       </details>
 
       <details class="tl-faq-item" style="border-top:1px solid #dcdcdc;padding:4px 0">
-        <summary class="tl-faq-q" style="display:flex;align-items:center;justify-content:space-between;font-family:Oswald,sans-serif;font-weight:500;font-size:19px;color:#111111;padding:20px 0">Ho bisogno di un partner per allenarmi?</summary>
-        <p style="margin:0 0 24px;font-size:17px;line-height:1.75;color:#2a2a2a">Funzionerà altrettanto bene sia se ci si allena da soli o con un partner.</p>
+        <summary class="tl-faq-q" style="display:flex;align-items:center;justify-content:space-between;font-family:Oswald,sans-serif;font-weight:500;font-size:19px;color:var(--tl-ink-3);padding:20px 0">Ho bisogno di un partner per allenarmi?</summary>
+        <p style="margin:0 0 24px;font-size:17px;line-height:1.75;color:var(--tl-ink-2)">Funzionerà altrettanto bene sia se ci si allena da soli o con un partner.</p>
       </details>
 
       <details class="tl-faq-item" style="border-top:1px solid #dcdcdc;border-bottom:1px solid #dcdcdc;padding:4px 0">
-        <summary class="tl-faq-q" style="display:flex;align-items:center;justify-content:space-between;font-family:Oswald,sans-serif;font-weight:500;font-size:19px;color:#111111;padding:20px 0">È importante il ruolo in cui gioco?</summary>
-        <p style="margin:0 0 24px;font-size:17px;line-height:1.75;color:#2a2a2a">No, non è importante: possiamo allenare big man ed esterni allo stesso modo, venendo incontro alle esigenze di ognuno.</p>
+        <summary class="tl-faq-q" style="display:flex;align-items:center;justify-content:space-between;font-family:Oswald,sans-serif;font-weight:500;font-size:19px;color:var(--tl-ink-3);padding:20px 0">È importante il ruolo in cui gioco?</summary>
+        <p style="margin:0 0 24px;font-size:17px;line-height:1.75;color:var(--tl-ink-2)">No, non è importante: possiamo allenare big man ed esterni allo stesso modo, venendo incontro alle esigenze di ognuno.</p>
       </details>
 
     </div>
 
     <div style="margin-top:44px;display:flex;gap:16px;flex-wrap:wrap">
-      <a class="hv3" href="mailto:basket.tiziano@gmail.com" style="background:#3373dc;color:#ffffff;font-family:Oswald,sans-serif;font-size:16px;letter-spacing:1.4px;text-transform:uppercase;padding:13px 26px;border-radius:5px">Contattami subito!!</a>
-      <a href="index.html" style="color:#3373dc;font-family:Oswald,sans-serif;font-size:16px;letter-spacing:1.4px;text-transform:uppercase;padding:13px 4px">&larr; Torna alla home</a>
+      <a class="hv3" href="mailto:basket.tiziano@gmail.com" style="background:var(--tl-blue);color:#ffffff;font-family:Oswald,sans-serif;font-size:16px;letter-spacing:1.4px;text-transform:uppercase;padding:13px 26px;border-radius:5px">Contattami subito!!</a>
+      <a href="index.html" style="color:var(--tl-blue);font-family:Oswald,sans-serif;font-size:16px;letter-spacing:1.4px;text-transform:uppercase;padding:13px 4px">&larr; Torna alla home</a>
     </div>
   </section>
 
-  <div style="background:#0b0b0b;color:#cfcfcf">
-    <footer style="border-top:1px solid #1e1e1e">
+  <div style="position:relative;overflow:hidden;background:#0b0b0b;color:#cfcfcf">
+    <svg class="tl-court-mark" viewBox="0 0 200 200" fill="none" stroke="#ffffff" stroke-width="2" aria-hidden="true"><path d="M0 200 C0 100 100 0 200 0"/><circle cx="145" cy="55" r="16"/></svg>
+    <footer style="position:relative;border-top:1px solid #1e1e1e">
       <div style="max-width:1200px;margin:0 auto;padding:26px 24px;font-size:13.5px;color:#8a8a8a">
         <p style="margin:0">&#x000A9;&nbsp;2026 &middot;Tiziano Lorenzon All Rigth Reserved &middot; <a class="hv1" href="http://mydomain.com/" style="color:#8a8a8a">Andrea Meneghin</a></p>
       </div>
