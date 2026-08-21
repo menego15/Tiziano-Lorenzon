@@ -15,14 +15,36 @@ a{color:#3373dc;text-decoration:none}
 a:hover{color:#1f4fa3}
 summary{cursor:pointer}
 summary::-webkit-details-marker{display:none}
-@media (max-width:900px){.tl-2col{grid-template-columns:1fr !important}.tl-hero-h{font-size:34px !important;word-spacing:4px !important}.tl-nav{gap:14px !important}}
+img{max-width:100%}
+.tl-hero-h{width:100%}
+.tl-menu-toggle{position:absolute;opacity:0;width:1px;height:1px;overflow:hidden}
+.tl-hamburger{display:none;flex-direction:column;justify-content:center;gap:6px;width:30px;height:24px;cursor:pointer}
+.tl-hamburger span{display:block;width:100%;height:2px;background:#ffffff;border-radius:1px;transition:transform .2s,opacity .2s}
+@media (max-width:900px){
+  .tl-2col{grid-template-columns:1fr !important}
+  .tl-hero-h{font-size:34px !important;word-spacing:4px !important}
+  .tl-hamburger{display:flex}
+  .tl-nav{display:none !important;width:100%;flex-basis:100%;flex-direction:column !important;align-items:flex-start !important;gap:14px !important;border-top:1px solid #1a1a1a;margin-top:14px;padding-top:14px}
+  .tl-menu-toggle:checked ~ .tl-nav{display:flex !important}
+  .tl-menu-toggle:checked ~ .tl-hamburger span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+  .tl-menu-toggle:checked ~ .tl-hamburger span:nth-child(2){opacity:0}
+  .tl-menu-toggle:checked ~ .tl-hamburger span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+  .tl-sticky{position:static !important;top:auto !important}
+  .tl-pad{padding-top:56px !important;padding-bottom:56px !important}
+  .tl-logo-fixed{max-width:160px !important;margin:0 auto !important}
+}
+@media (max-width:560px){
+  .tl-hero-pad{padding-top:90px !important;padding-bottom:64px !important}
+  .tl-hero-h{font-size:26px !important;word-spacing:2px !important;letter-spacing:0.5px !important}
+  .tl-nav{gap:10px !important;font-size:12.5px !important}
+  h3{font-size:24px !important}
+}
 .hv0:hover{color:#ffffff;border-bottom:2px solid #ffffff}
 .hv1:hover{color:#ffffff}
 .hv2:hover{color:#ffffff;background:#1a1a1a}
 .hv3:hover{background:#1f4fa3;color:#ffffff}
 .hv4:hover{color:#3373dc}
 .hv5:hover{border:1px solid #3373dc;color:#ffffff}
-.tl-drop:hover .tl-menu{display:flex !important}
 </style>
 </head>
 <body>
@@ -34,19 +56,21 @@ summary::-webkit-details-marker{display:none}
         <span style="font-family:Oswald,sans-serif;font-size:25px;font-weight:700;line-height:1;letter-spacing:1.5px;text-transform:uppercase">Tiziano Lorenzon</span>
         <span style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#9a9a9a">Basket Personal Coaching</span>
       </a>
+      <input type="checkbox" id="tl-menu-toggle" class="tl-menu-toggle"/>
+      <label for="tl-menu-toggle" class="tl-hamburger" aria-label="Apri menu"><span></span><span></span><span></span></label>
       <nav class="tl-nav" style="display:flex;align-items:center;gap:26px;flex-wrap:wrap;font-family:Oswald,sans-serif;font-size:14px;letter-spacing:1.4px;text-transform:uppercase">
         <a href="http://tizianolorenzon.com/" style="color:#3373dc;padding:6px 0;border-bottom:2px solid #3373dc">Hompage</a>
-        <a class="hv0" href="http://tizianolorenzon.com/mission/" style="color:#e6e6e6;padding:6px 0;border-bottom:2px solid transparent">Mission</a>
-        <a class="hv0" href="http://tizianolorenzon.com/chi-sono/" style="color:#e6e6e6;padding:6px 0;border-bottom:2px solid transparent">Chi sono</a>
+        <a class="hv0" href="mission.html" style="color:#e6e6e6;padding:6px 0;border-bottom:2px solid transparent">Mission</a>
+        <a class="hv0" href="chi-sono.html" style="color:#e6e6e6;padding:6px 0;border-bottom:2px solid transparent">Chi sono</a>
         <a class="hv0" href="http://tizianolorenzon.com/gli-ospiti-del-camp/" style="color:#e6e6e6;padding:6px 0;border-bottom:2px solid transparent">Gli Ospiti del Camp</a>
-        <div class="tl-drop" style="position:relative">
-          <a class="hv1" href="#programmi" style="color:#e6e6e6;padding:6px 0;border-bottom:2px solid transparent">I nostri Programmi ▾</a>
-          <div class="tl-menu" style="position:absolute;top:32px;left:-16px;min-width:230px;background:#0b0b0b;border:1px solid #262626;padding:8px 0;display:none;flex-direction:column">
+        <details class="tl-drop" style="position:relative">
+          <summary class="hv1" style="list-style:none;color:#e6e6e6;padding:6px 0;border-bottom:2px solid transparent;font:inherit;letter-spacing:inherit;text-transform:inherit">I nostri Programmi ▾</summary>
+          <div class="tl-menu" style="position:absolute;top:32px;left:-16px;min-width:230px;background:#0b0b0b;border:1px solid #262626;padding:8px 0;display:flex;flex-direction:column;z-index:60">
             <a class="hv2" href="http://tizianolorenzon.com/programma-top-player/" style="color:#e6e6e6;padding:10px 18px">Big Man Program</a>
             <a class="hv2" href="http://tizianolorenzon.com/programma-individuale/" style="color:#e6e6e6;padding:10px 18px">Guard Program</a>
             <a class="hv2" href="http://tizianolorenzon.com/shooting-program/" style="color:#e6e6e6;padding:10px 18px">Shooting Program</a>
           </div>
-        </div>
+        </details>
         <a class="hv0" href="http://tizianolorenzon.com/blog/" style="color:#e6e6e6;padding:6px 0;border-bottom:2px solid transparent">Blog</a>
         <a class="hv0" href="http://tizianolorenzon.com/faq-2/" style="color:#e6e6e6;padding:6px 0;border-bottom:2px solid transparent">Faq</a>
       </nav>
@@ -56,16 +80,16 @@ summary::-webkit-details-marker{display:none}
   <section style="position:relative;background:#0b0b0b;overflow:hidden">
     <img src="http://tizianolorenzon.com/wp-content/uploads/2023/06/pexels-bk-aguilar-945471-1-1-scaled.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.42;filter:grayscale(0.35)"/>
     <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,11,0.55) 0%,rgba(11,11,11,0.75) 100%)"></div>
-    <div style="position:relative;max-width:900px;margin:0 auto;padding:150px 24px 130px;display:flex;flex-direction:column;align-items:center;gap:34px;text-align:center">
-      <h1 class="tl-hero-h" style="margin:0;font-family:Oswald,sans-serif;font-weight:600;font-size:52px;line-height:1.18;letter-spacing:1px;word-spacing:9px;color:#ffffff;text-transform:uppercase;text-wrap:balance">Desiderio Carattere Entusiasmo Determinazione Intensità Disciplina Dedizione</h1>
+    <div class="tl-hero-pad" style="position:relative;max-width:900px;margin:0 auto;padding:150px 24px 130px;display:flex;flex-direction:column;align-items:center;gap:34px;text-align:center">
+      <h1 class="tl-hero-h" style="margin:0;font-family:Oswald,sans-serif;font-weight:600;font-size:52px;line-height:1.18;letter-spacing:1px;word-spacing:9px;color:#ffffff;text-transform:uppercase">Desiderio Carattere Entusiasmo Determinazione Intensità Disciplina Dedizione</h1>
       <p style="margin:0;font-size:20px;color:#d8d8d8;letter-spacing:0.3px">Sono le basi di qualsiasi grande giocatore&#8230;</p>
       <a class="hv3" href="mailto:basket.tiziano@gmail.com" style="background:#3373dc;color:#ffffff;font-family:Oswald,sans-serif;font-size:18px;letter-spacing:1.6px;text-transform:uppercase;padding:16px 34px;border-radius:5px">Contattami subito!!</a>
     </div>
   </section>
 
-  <section style="max-width:1200px;margin:0 auto;padding:90px 24px">
+  <section class="tl-pad" style="max-width:1200px;margin:0 auto;padding:90px 24px">
     <div class="tl-2col" style="display:grid;grid-template-columns:0.85fr 1.15fr;gap:56px;align-items:start">
-      <div style="display:flex;flex-direction:column;gap:24px;position:sticky;top:130px">
+      <div class="tl-sticky" style="display:flex;flex-direction:column;gap:24px;position:sticky;top:130px">
         <img src="uploads/Tiz.png" alt="TIZ Top Player Academy 2026" style="width:100%;height:auto;display:block;border:1px solid #e4e4e4;aspect-ratio:1024/1536"/>
         <div style="border:1px solid #e4e4e4;padding:26px;display:flex;flex-direction:column;gap:18px;align-items:center;text-align:center">
           <h2 style="margin:0;font-family:Oswald,sans-serif;font-weight:500;font-size:24px;line-height:1.3;color:#111111">Per <strong style="font-weight:700">iscriverti</strong> scarica il <a href="http://tizianolorenzon.com/wp-content/uploads/2024/06/ISCR.-ACADEMY-2024.pdf" target="_blank" rel="noreferrer noopener" style="color:#111111;text-decoration:underline">modulo</a>&nbsp;o contattaci anche al. 338.4818623.</h2>
@@ -83,8 +107,8 @@ summary::-webkit-details-marker{display:none}
   </section>
 
   <section style="background:#f5f5f5;border-top:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6">
-    <div class="tl-2col" style="max-width:1200px;margin:0 auto;padding:90px 24px;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start">
-      <div style="display:flex;flex-direction:column;gap:26px;position:sticky;top:130px">
+    <div class="tl-2col tl-pad" style="max-width:1200px;margin:0 auto;padding:90px 24px;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start">
+      <div class="tl-sticky" style="display:flex;flex-direction:column;gap:26px;position:sticky;top:130px">
         <img src="uploads/pexels-bk-aguilar-945471-1-1-300x207.jpg" alt="Palestra di basket" style="width:100%;height:auto;display:block;aspect-ratio:300/207;object-fit:cover"/>
         <a href="http://tizianolorenzon.com/wp-content/uploads/2015/03/logo-cse.jpg"><img src="http://tizianolorenzon.com/wp-content/uploads/2015/03/logo-cse.jpg" alt="logo-cse" style="width:88px;height:80px;display:block"/></a>
       </div>
@@ -108,10 +132,10 @@ summary::-webkit-details-marker{display:none}
     </div>
   </section>
 
-  <section style="max-width:960px;margin:0 auto;padding:90px 24px">
+  <section class="tl-pad" style="max-width:960px;margin:0 auto;padding:90px 24px">
     <h3 style="margin:0 0 40px;font-family:Oswald,sans-serif;font-weight:600;font-size:32px;line-height:1.2;text-align:center;letter-spacing:0.5px;color:#111111;text-wrap:balance">Proposta per la valorizzazione di giovani giocatori italiani</h3>
     <div class="tl-2col" style="display:grid;grid-template-columns:200px 1fr;gap:36px;align-items:center;margin-bottom:36px">
-      <img src="http://tizianolorenzon.com/wp-content/uploads/2020/04/Tizianolorenzon-logo.jpg" alt="" style="width:100%;height:auto;display:block"/>
+      <img class="tl-logo-fixed" src="http://tizianolorenzon.com/wp-content/uploads/2020/04/Tizianolorenzon-logo.jpg" alt="" style="width:100%;height:auto;display:block"/>
       <div style="display:flex;flex-direction:column;gap:16px;font-size:19px;line-height:1.7;color:#2a2a2a;text-align:justify">
         <p style="margin:0">Vorrei sottoporre all&#8217;attenzione delle mie idee, che da diverso tempo vado maturando, relative ad un miglioramento del prodotto basket ed un maggior utilizzo dei giovani giocatori nel campionato di Lega A, il tutto a beneficio della Nazionale.</p>
         <p style="margin:0">Le seguenti sono una sorta di riflessioni a voce alta, che provengono dal cuore, perchè amo la pallacanestro, avendo avuto il privilegio di viverla da giocatore protagonista.</p>
@@ -144,7 +168,7 @@ summary::-webkit-details-marker{display:none}
   </section>
 
   <section id="programmi" style="background:#ffffff;border-top:1px solid #e6e6e6">
-    <div class="tl-2col" style="max-width:1200px;margin:0 auto;padding:90px 24px;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center">
+    <div class="tl-2col tl-pad" style="max-width:1200px;margin:0 auto;padding:90px 24px;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center">
       <div style="display:flex;flex-direction:column;gap:18px">
         <h3 style="margin:0;font-family:Oswald,sans-serif;font-weight:600;font-size:34px;line-height:1.15;text-transform:uppercase;letter-spacing:0.5px;color:#111111">Programma Top Players</h3>
         <div style="width:64px;height:4px;background:#3373dc"></div>
@@ -161,7 +185,7 @@ summary::-webkit-details-marker{display:none}
   </section>
 
   <div style="background:#0b0b0b;color:#cfcfcf">
-    <div class="tl-2col" style="max-width:1200px;margin:0 auto;padding:70px 24px;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:56px;align-items:start">
+    <div class="tl-2col tl-pad" style="max-width:1200px;margin:0 auto;padding:70px 24px;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:56px;align-items:start">
       <section style="display:flex;flex-direction:column;gap:16px">
         <h4 style="margin:0;font-family:Oswald,sans-serif;font-size:15px;letter-spacing:1.6px;text-transform:uppercase;color:#ffffff">Articoli recenti</h4>
         <ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:14px;font-size:15px;line-height:1.5">

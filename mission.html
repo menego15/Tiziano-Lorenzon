@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mission — Tiziano Lorenzon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+<style>
+html,body{margin:0;padding:0}
+body{background:#ffffff;color:#1c1c1c;font-family:Lato,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#3373dc;text-decoration:none}
+a:hover{color:#1f4fa3}
+summary{cursor:pointer}
+summary::-webkit-details-marker{display:none}
+img{max-width:100%}
+.tl-menu-toggle{position:absolute;opacity:0;width:1px;height:1px;overflow:hidden}
+.tl-hamburger{display:none;flex-direction:column;justify-content:center;gap:6px;width:30px;height:24px;cursor:pointer}
+.tl-hamburger span{display:block;width:100%;height:2px;background:#ffffff;border-radius:1px;transition:transform .2s,opacity .2s}
+@media (max-width:900px){
+  .tl-2col{grid-template-columns:1fr !important}
+  .tl-hamburger{display:flex}
+  .tl-nav{display:none !important;width:100%;flex-basis:100%;flex-direction:column !important;align-items:flex-start !important;gap:14px !important;border-top:1px solid #1a1a1a;margin-top:14px;padding-top:14px}
+  .tl-menu-toggle:checked ~ .tl-nav{display:flex !important}
+  .tl-menu-toggle:checked ~ .tl-hamburger span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+  .tl-menu-toggle:checked ~ .tl-hamburger span:nth-child(2){opacity:0}
+  .tl-menu-toggle:checked ~ .tl-hamburger span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+  .tl-pad{padding-top:56px !important;padding-bottom:56px !important}
+  .tl-sticky{position:static !important;top:auto !important}
+}
+@media (max-width:480px){
+  .tl-mission-img{float:none !important;margin:0 0 16px !important}
+}
+@media (max-width:560px){
+  .tl-nav{gap:10px !important;font-size:12.5px !important}
+  h1{font-size:30px !important}
+}
+.hv0:hover{color:#ffffff;border-bottom:2px solid #ffffff}
+.hv1:hover{color:#ffffff}
+.hv2:hover{color:#ffffff;background:#1a1a1a}
+.hv3:hover{background:#1f4fa3;color:#ffffff}
+.hv4:hover{color:#3373dc}
+.hv5:hover{border:1px solid #3373dc;color:#ffffff}
+</style>
+</head>
+<body>
+<div style="width:100%;background:#ffffff">
+
+  <header style="position:sticky;top:0;z-index:50;background:#000000;color:#ffffff;border-bottom:3px solid #3373dc">
+    <div style="max-width:1200px;margin:0 auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+      <a href="index.html" style="color:#fff;display:flex;flex-direction:column;gap:4px">
+        <span style="font-family:Oswald,sans-serif;font-size:25px;font-weight:700;line-height:1;letter-spacing:1.5px;text-transform:uppercase">Tiziano Lorenzon</span>
+        <span style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#9a9a9a">Basket Personal Coaching</span>
+      </a>
+      <input type="checkbox" id="tl-menu-toggle" class="tl-menu-toggle"/>
+      <label for="tl-menu-toggle" class="tl-hamburger" aria-label="Apri menu"><span></span><span></span><span></span></label>
+      <nav class="tl-nav" style="display:flex;align-items:center;gap:26px;flex-wrap:wrap;font-family:Oswald,sans-serif;font-size:14px;letter-spacing:1.4px;text-transform:uppercase">
+        <a class="hv0" href="index.html" style="color:#e6e6e6;padding:6px 0;border-bottom:2px solid transparent">Hompage</a>
+        <a href="mission.html" style="color:#3373dc;padding:6px 0;border-bottom:2px solid #3373dc">Mission</a>
+        <a class="hv0" href="chi-sono.html" style="color:#e6e6e6;padding:6px 0;border-bottom:2px solid transparent">Chi sono</a>
+        <a class="hv0" href="http://tizianolorenzon.com/gli-ospiti-del-camp/" style="color:#e6e6e6;padding:6px 0;border-bottom:2px solid transparent">Gli Ospiti del Camp</a>
+        <details class="tl-drop" style="position:relative">
+          <summary class="hv1" style="list-style:none;color:#e6e6e6;padding:6px 0;border-bottom:2px solid transparent;font:inherit;letter-spacing:inherit;text-transform:inherit">I nostri Programmi ▾</summary>
+          <div class="tl-menu" style="position:absolute;top:32px;left:-16px;min-width:230px;background:#0b0b0b;border:1px solid #262626;padding:8px 0;display:flex;flex-direction:column;z-index:60">
+            <a class="hv2" href="http://tizianolorenzon.com/programma-top-player/" style="color:#e6e6e6;padding:10px 18px">Big Man Program</a>
+            <a class="hv2" href="http://tizianolorenzon.com/programma-individuale/" style="color:#e6e6e6;padding:10px 18px">Guard Program</a>
+            <a class="hv2" href="http://tizianolorenzon.com/shooting-program/" style="color:#e6e6e6;padding:10px 18px">Shooting Program</a>
+          </div>
+        </details>
+        <a class="hv0" href="http://tizianolorenzon.com/blog/" style="color:#e6e6e6;padding:6px 0;border-bottom:2px solid transparent">Blog</a>
+        <a class="hv0" href="http://tizianolorenzon.com/faq-2/" style="color:#e6e6e6;padding:6px 0;border-bottom:2px solid transparent">Faq</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="tl-pad" style="max-width:900px;margin:0 auto;padding:90px 24px 100px">
+    <h1 style="margin:0 0 40px;font-family:Oswald,sans-serif;font-weight:700;font-size:44px;line-height:1.15;letter-spacing:0.5px;color:#111111">Mission</h1>
+    <div style="display:flex;flex-direction:column;gap:22px;font-size:17.5px;line-height:1.8;color:#2a2a2a;text-align:justify;text-wrap:pretty">
+      <div>
+        <img class="tl-mission-img" src="uploads/lorenzon2.jpg" alt="Tiziano Lorenzon in campo" width="190" height="191" style="float:left;width:190px;height:191px;margin:0 24px 12px 0;border:1px solid #e4e4e4"/>
+        <p style="margin:0">Ai tempi in cui giocavo passavo ogni estate in palestra da solo per migliorare il mio bagaglio tecnico, perché la mia motivazione era quella di essere un giocatore protagonista in campo, essere cioè più competitivo per il campionato successivo.</p>
+        <p style="margin:22px 0 0">Quanto avrei voluto ci fosse stato qualcuno ad allenarmi e che mi avesse detto cosa come e perché fare determinate cose!!!</p>
+      </div>
+        <p style="margin:0">Per questo oggi metto a disposizione le mie competenze, sviluppate ed acquisite in tanti anni di altissimi livelli, per coloro che desiderano allenarsi ad essere protagonisti nel modo di stare in campo.</p>
+        <p style="margin:0">Ho sviluppato un metodo lavorativo improntato sull'attenzione dei minimi particolari in modo da migliorare i fondamentali in maniera dinamica e la necessaria concentrazione da consentirci qualità e tempestività nelle scelte da fare per essere efficaci.</p>
+        <p style="margin:0">L'amore che ho per la pallacanestro (per me lo sport più bello che esiste) mi ha fatto dare tanto, ma anche ricevere grandi soddisfazioni. Inoltre mi ha dato modo di vedere che tipo di persone siamo, tirando fuori delle doti e delle qualità che a volte neanche sospettiamo di avere. Per esempio la tenacia con cui sosteniamo le nostre convinzioni, la forza nell'affrontare e nel resistere in situazioni difficili, lo sviluppo della tattica per procurarci dei vantaggi, il credere in se stessi fino in fondo, l'intensità del modo di stare in campo.</p>
+        <p style="margin:0">Sono solo alcuni esempi che ci derivano da una cosa imprescindibile:</p>
+        <p style="margin:0"><strong>non esistono scorciatoie per imparare.</strong> La sola via è il quotidiano costante lavoro che siamo disposti a fare per avere SUCCESSO, dove per &laquo;successo&raquo; si intende centrare i propri obiettivi.</p>
+        <p style="margin:0">Alla base di tutti i successi di una squadra c'è la sinergia di un intenso lavoro individuale, coordinato ad un altrettanto intenso lavoro di gruppo.</p>
+        <p style="margin:0">Infatti il gioco di squadra deve essere inteso come una sinfonia eseguita da un'orchestra, in cui tutti sanno suonare il proprio strumento, leggere lo spartito, e dove regnano armonia e sincronia, cioè la perfetta contemporaneità tra le parti in azione.</p>
+        <blockquote style="margin:14px 0 0;padding:22px 26px;border-left:4px solid #3373dc;background:#f5f5f5;font-family:Oswald,sans-serif;font-weight:500;font-size:21px;font-style:italic;color:#111111;text-align:left">&laquo;Il nostro obiettivo è la realizzazione del tuo successo&raquo;</blockquote>
+    </div>
+    <div style="margin-top:44px">
+      <a class="hv3" href="index.html" style="background:#3373dc;color:#ffffff;font-family:Oswald,sans-serif;font-size:16px;letter-spacing:1.4px;text-transform:uppercase;padding:13px 26px;border-radius:5px">&larr; Torna alla home</a>
+    </div>
+  </section>
+
+  <div style="background:#0b0b0b;color:#cfcfcf">
+    <footer style="border-top:1px solid #1e1e1e">
+      <div style="max-width:1200px;margin:0 auto;padding:26px 24px;font-size:13.5px;color:#8a8a8a">
+        <p style="margin:0">&#x000A9;&nbsp;2026 &middot;Tiziano Lorenzon All Rigth Reserved &middot; <a class="hv1" href="http://mydomain.com/" style="color:#8a8a8a">Andrea Meneghin</a></p>
+      </div>
+    </footer>
+  </div>
+</div>
+</body>
+</html>
