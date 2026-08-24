@@ -99,3 +99,13 @@ img{max-width:100%}
   .tl-cookie-inner{padding:18px 20px}
   .tl-cookie-actions{width:100%;justify-content:flex-start}
 }
+
+/* back-to-top button */
+.tl-top-btn{position:fixed;right:24px;bottom:24px;z-index:150;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;width:52px;height:52px;border-radius:50%;border:none;background:var(--tl-blue);color:#ffffff;cursor:pointer;box-shadow:0 10px 24px rgba(0,0,0,0.25);opacity:0;visibility:hidden;transform:translateY(12px);transition:opacity .25s ease,transform .25s ease,background .2s ease}
+.tl-top-btn.tl-top-btn-show{opacity:1;visibility:visible;transform:translateY(0)}
+.tl-top-btn:hover{background:var(--tl-blue-dark)}
+.tl-top-btn svg{width:18px;height:18px;flex:none}
+.tl-top-btn span{font-family:Oswald,sans-serif;font-size:9.5px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;line-height:1}
+@media (max-width:560px){
+  .tl-top-btn{right:16px;bottom:16px;width:46px;height:46px}
+}
